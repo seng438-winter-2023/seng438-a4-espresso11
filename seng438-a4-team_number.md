@@ -22,8 +22,20 @@ Text ...
 
 # Report all the statistics and the mutation score for each test class
 
+DataUtilities: 
 
-Text ...
+Our initial mutation coverage for the DataUtilities class was 52% with 457/881 bugs killed.
+
+Range:
+
+Our initial mutation coverage for the Range class was 41% with 591/1431 bugs killed. After adding more tests for hash, scale, combinedIgnoringNaN and range, we were able to bring the coverage up to 58% with 828/1431 bugs killed. 
+
+Original mutation tests:
+
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/101993148/224931743-31fb7d95-1859-430f-93d1-28204a26153b.png">
+
+Updated mutation tests:
+
 
 
 
