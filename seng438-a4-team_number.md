@@ -73,9 +73,6 @@ combine(Range range1, Range range2) - negated conditional → KILLED
 
 
 
-
-
-
 # Report all the statistics and the mutation score for each test class
 
 DataUtilities: 
@@ -111,15 +108,16 @@ Text ...
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
-Text ...
+Mutation testing is a way of intreoducing intentional faults in the the code and testing out the test suite. Mutation testing is useful because it helps identify weakness in the test suite and a developer can then imporve the coverage with the help of mutation testing. It can also detect bugs early on in the development process making it easier to fix mistakes. It allows the developers to see their mistakes in and fix them. It also helps detect useless test cases hence improving the overall quality of the tests. Mutation testing has some disadvantages as well. It can be computationally expensive as we learned through out this lab, it takes a lot of time to get the results and it requires a lot of computational power as well. If a system constantly runs on high power, its lifetime will decrease and the maintenance cost will go up. Moreover, this type of testing is complex and the developer needs to have an extensive knowledge of mutation testing which makes it harder for the companies to find people. 
+
 
 # Explain your SELENUIM test case design process
 
-Text ...
+As a group we visited all the given websites and decided to choose ikea as it had more functionalities for us to test. We each chose two functionalities and decided to do the testing individually. Then we each came up with different test cases of each functionality and discussed with other group members for opinions. Lastly, we all did our testing on Selenium and compiled our scripts to upload on github. 
 
 # Explain the use of assertions and checkpoints
 
-Text ...
+Verification points allows a user to check if the right results are being displayed on the screen. Moreover, it saves time as the test will fail as soon as it goes to the wrong page. Our gtoup decided to use assertions to make sure that we got the desired results. AssertText allowed us to make sure that the correct data was being given to us. For example, After the login screen, ikea welcomes the user by their name and we used assertText to make sure we were getting this statement if the login passed. 
 
 # how did you test each functionaity with different test data
 
@@ -131,13 +129,14 @@ Text ...
 
 # How the team work/effort was divided and managed
 
-Text ...
-
+Our team divided the mutation testing into pairs. Iman and Rumaisa compeleted the mutation testing for DataUtilities and added more tests in order to reach the desired percentage of coverage. Muteeba and Shahzill completed the mutation testing for Range and added more tests to increase the coverage. For the GUI testing, the website was choosen by the group as a whole. However, everybody came up with their own test cases individually which were then discussed as a group and completed individually again on selenium. Everbody did the equal amount of work for the report.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-Text ...
+For the mutation testing, initially we were confused because the pit tests were taking longer than expected and we thought that something was wrong with our code. However, we later realised that the test is supposed to take about 10 - 20 minutes to be completed. 
+
+For the selenium testing, the website would sometimes react differently because of the previous tests. We found out that it stored cache and it did not always reset itself before the test. For example, if one test logged a user in, the website would test the next case with the user still logged in which sometimes caused our tests to fail. Instead, we decided to run the test individually, making sure the website was reset everytime. 
 
 # Comments/feedback on the lab itself
 
-Text ...
+Running the PIT tests required a lot of CPU power and heated our laptops to above 90C which damages its internal componenets. Moreover, since it took around 20 minutes to get a single PIT summary, it was not possible for us to run the tests everytime we added a new one. This made it difficult because sommetimes one test would increase the overall coverage by 2% and sometimes it would not even impact the coverage. Howerver, on the bright side, we learned two new ways of testing which is going to help us a lot in our future.
